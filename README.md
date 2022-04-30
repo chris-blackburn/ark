@@ -11,8 +11,8 @@ Ranger](https://www.gameranger.com/) might work.
 
 I also always love experimenting with build systems and programs, so I intend
 for this to be an exercise on that front as well (the goal is to make this
-    cross-platform).
+cross-platform, but I'm starting with Linux).
 
 ## Build
 
-run 'scripts/build.sh'
+run `scripts/build.sh`
