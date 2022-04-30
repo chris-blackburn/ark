@@ -10,5 +10,5 @@ function ark-build() {
 function ark-run() {
     mode=${1:-"Debug"}
 
-    $proj/build/$mode/arkrt
+    $proj/build/$mode/src/arkrt
 }

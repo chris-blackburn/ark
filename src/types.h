@@ -1,5 +1,4 @@
-#ifndef __TYPES_H_
-#define __TYPES_H_
+#pragma once
 
 #include <stdint.h>
 
@@ -18,6 +17,3 @@ typedef float f32;
 typedef double f64;
 
 typedef unsigned char byte;
-
-#endif /* __TYPES_H_ */
-

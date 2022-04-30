@@ -13,20 +13,4 @@ add_compile_options(-Wall -Wextra -Werror -pedantic
 # Public includes
 include_directories(${PROJECT_SOURCE_DIR}/include)
 
-# ark lib
-add_library(ark STATIC
-    src/ark/ark.c
-    )
-
-target_include_directories(ark PRIVATE
-    ${PROJECT_SOURCE_DIR}/src
-    )
-
-# Runtime
-add_executable(arkrt
-    src/main.c
-    )
-
-target_link_libraries(arkrt PRIVATE
-    ark
-    )
+add_subdirectory(src)

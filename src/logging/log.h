@@ -1,5 +1,4 @@
-#ifndef __LOGGING_H_
-#define __LOGGING_H_
+#pragma once
 
 #include <stdio.h>
 
@@ -28,5 +27,3 @@
 #define LOG_DEBUG(fmt, ...) __ARK_LOG(stderr, __LOG_COLOR_WHITE,     "DBG", fmt, ##__VA_ARGS__)
 #define LOG_WARN(fmt, ...)  __ARK_LOG(stderr, __LOG_COLOR_YELLOW,    "WRN", fmt, ##__VA_ARGS__)
 #define LOG_ERROR(fmt, ...) __ARK_LOG(stderr, __LOG_COLOR_RED,       "ERR", fmt, ##__VA_ARGS__)
-
-#endif /* __LOGGING_H_ */

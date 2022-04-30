@@ -4,7 +4,7 @@
 extern "C" {
 #endif
 
-int ark_run(void);
+int arknet_init(void);
 
 #ifdef __cplusplus
 }

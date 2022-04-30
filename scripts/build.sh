@@ -8,12 +8,9 @@ build=$proj/build/$mode
 
 echo "Building mode '${mode}'"
 
-if [ ! -d $build ]; then
-    cmake \
-        -DCMAKE_BUILD_TYPE=$mode \
-        -S $proj \
-        -GNinja \
-        -B $build
-fi
+cmake \
+    -DCMAKE_BUILD_TYPE=$mode \
+    -S $proj \
+    -B $build
 
 cmake --build $build

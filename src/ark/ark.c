@@ -1,4 +1,5 @@
 #include <ark.h>
+#include <ark/net.h>
 
 #include <unistd.h>
 #include <errno.h>
@@ -25,6 +26,8 @@ int ark_run(void)
     int rc;
 
     LOG_INFO("Starting ark");
+
+    arknet_init();
 
     listenfd = socket(AF_INET, SOCK_STREAM, 0);
     if (listenfd < 0) {
